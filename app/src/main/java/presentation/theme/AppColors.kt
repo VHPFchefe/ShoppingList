@@ -2,10 +2,11 @@ package presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
-object Color {
+object AppColors {
     val White = Color(0xFFFFFFFF)
     val Black = Color(0xFF000000)
     val Transparent = Color(0x00000000)
+    val Gray = Color(0xFFBDBDBD)
 
     val Orange500 = Color(0xFFF97316)   // for buttons
     val Orange600 = Color(0xFFEA580C)   // pressed / hover

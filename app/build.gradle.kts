@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.23"
 }
 
 android {
@@ -40,7 +41,8 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -52,6 +54,7 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.foundation.layout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

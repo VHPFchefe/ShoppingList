@@ -1,7 +1,7 @@
 package presentation.screens
 
 import androidx.compose.animation.core.animateFloatAsState
-import presentation.theme.Color
+import presentation.theme.AppColors
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Label
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -83,7 +82,7 @@ fun LoginScreen(
                 text = "NOME DO APP",
                 fontFamily = BungeeFamily,
                 fontSize = 46.sp,
-                color = Color.Black,
+                color = AppColors.Black,
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .padding(top = 80.dp)
@@ -97,7 +96,7 @@ fun LoginScreen(
                 text = "Criado por \n Vinícius Floriano",
                 fontFamily = BungeeFamily,
                 fontSize = 22.sp,
-                color = Color.Orange500,
+                color = AppColors.Orange500,
                 textAlign = TextAlign.Right,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -113,7 +112,7 @@ fun LoginScreen(
                 text = "Clique aqui para começar!!!",
                 fontFamily = BungeeFamily,
                 fontSize = 46.sp,
-                color = if(isLabelClickHereEnabled) Color.Orange500 else Color.Transparent,
+                color = if(isLabelClickHereEnabled) AppColors.Orange500 else AppColors.Transparent,
                 textAlign = TextAlign.Center,
             )
         }
